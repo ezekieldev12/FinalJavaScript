@@ -1,0 +1,157 @@
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #160d18;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #110f0fea;
+}
+
+.description {
+    height: 25px;
+    overflow: hidden;
+    transition: height .2s ease-in .2s;
+}
+.description:hover{
+    height: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+.header__logo {
+    margin: 3rem 0;
+}
+
+.alert{
+    z-index: 100;
+}
+
+
+.carrito {
+    min-height: 70vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos{
+    display: flex;
+}
+
+.table__productos > img {
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad > input {
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.oculto, .remove{
+    display: none;
+}
+
+.card .tallas-contenedor {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.card .tallas {
+    padding: 0.5rem;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.card .tallas .talla {
+    background-color: #EBEBEB;
+    padding: 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.card .tallas .talla:hover {
+    background-color: #3a26be;
+}
+
+.card .tallas .talla.active{
+    background-color: #2d1d97;
+    color: #f2f2f2;
+    transform: translateY(-10px);
+}
+
+.container_tarjeta {
+    min-height: 80vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container_tarjeta form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0,.1);
+    padding: 20px;
+    width: 600px;
+}
+
+.container_tarjeta form .inputBox{
+    margin-top: 20px;
+}
+
+.container_tarjeta form .inputBox{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+
+.container_tarjeta form .inputBox input,
+.container_tarjeta form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0,.3);
+    color: #444;
+}
+
+.container_tarjeta form .flexbox{
+    display: flex;
+    gap: 15px;
+}
+
+.container_tarjeta form .flexbox .inputBox{
+    flex: 1 1 150px;
+}
+

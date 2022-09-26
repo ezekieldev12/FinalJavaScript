@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Zona-Outlet</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="logo.png" alt="Logotipo" width="200px">
+        </a>
+    </header>
+    <header class="container-fluid bg-dark py-4">
+        <ul class="nav nav-pills mb-3 justify-content-center py-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Productos</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+            </li>
+        </ul>
+    </header>
+    <div class="alert container position-sticky top-0 alert-primary oculto">
+    </div>
+    <div class=" container position-sticky top-0 alert-danger remove">
+    </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="text-center py-4 text-white">
+                    <h1 class="text-decoration-underline" >Nuevo y destacado</h1>
+                </div>
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Conjunto</h5>
+                            <img src="conjunto.jpg" class="card-img-top" alt="">
+                            <div class="card-body ">
+                                <p class="card-text text-white-50 description">CONJUNTO DE FUTBOL ADIDAS SERENO NEGRO</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$13000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Campera</h5>
+                            <img src="campera.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">CAMPERA ROMPEVIENTO NIKE ENTRENAMIENTO SPORT CLASH VERDE</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$15000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Pantalon</h5>
+                            <img src="pantalon.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">PANTALON DE FUTBOL PUMA TEAMLIGA ENTRENAMIENTO NEGRO</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$10000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Camiseta</h5>
+                            <img src="camiseta.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">CAMISETA ADIDAS JUVENTUS TITULAR</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$12000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Buzo</h5>
+                            <img src="buzo.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">BUZO CON CAPUCHA PUMA ESS BIG</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$9000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Short</h5>
+                            <img src="short.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">SHORT ADIDAS FUTBOL NEGRO</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$2800</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Camperon</h5>
+                            <img src="camperon.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">CAMPERON DE ABRIGO HANG LOOSE ECLIPSE MUJER VERDE</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$20000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Medias</h5>
+                            <img src="medias.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">MEDIAS CAÑA BAJA PACK X3 361°</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$1800</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Todos los productos-->
+
+                <div class="text-center text-white py-4 ">
+                    <h1 class="text-decoration-underline">Todos los productos</h1>
+                </div>
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Campera blanca</h5>
+                            <img src="campera blanca.jpg" class="card-img-top" alt="">
+                            <div class="card-body ">
+                                <p class="card-text text-white-50 description">CAMPERA DE FUTBOL ADIDAS TIRO 21 MUJER BLANCA</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$13999</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Buzo</h5>
+                            <img src="buzo2.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">BUZO CON CAPUCHA NEW BALANCE ESSENTIALS AZUL</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$14790</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Remera</h5>
+                            <img src="remeranike.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">REMERA NIKE NSW CLUB NEGRA</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$6490</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Buzo mujer</h5>
+                            <img src="buzomujer.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">BUZO CON CAPUCHA PUMA ESSENTIALS METALLIC MUJER NEGRO</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$16990</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Calza</h5>
+                            <img src="calza.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">CALZA PUMA RUNNING FAVORITE REG MUJER NEGRA</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$11999</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Pollera</h5>
+                            <img src="pollera.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">POLLERA CON CALZA LACOSTE MUJER AZUL</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$16000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Zapatilla de tenis</h5>
+                            <img src="zapatillas.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">ZAPATILLAS DE TENIS ADIDAS GAMECOURT 2 NEGRA</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$19990</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Ojotas</h5>
+                            <img src="ojota.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">OJOTA ADIDAS ADILETTE SHOWER NEGRA</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$8999</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Campera Argentina</h5>
+                            <img src="camperaargentina.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">CAMPERA DE ARGENTINA ADIDAS PRESENTACION NIÑO NIÑA NEGRA</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$20000</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Mochila</h5>
+                            <img src="mochila.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">MOCHILA PUMA PHASE AZUL</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$7499</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Gorra</h5>
+                            <img src="gorra.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-white-50 description">GORRA ADIDAS RUNNER NEGRA</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$6999</span></h5>
+                                <div class="tallas-contenedor">
+                                    <div class="titulo">
+                                        <span class="text-white" >Tallas</span>
+                                    </div>
+                                    <div class="tallas">
+                                        <div class="talla">
+                                            <span>S</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>M</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>L</span>
+                                        </div>
+                                        <div class="talla">
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button  class="btn btn-primary button">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            </div>
+            <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <br>
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr class="text-primary" >
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                <div class="col">
+                    <h3 class="itemCartTotal text-white">Total: 0</h3>
+                </div>
+                <br><br>
+                <section class="container">
+                    <div class="d-flex justify-content-center pb-4">
+                        <div class="col-sm-6 col-md-6 col-lg-4  py-5  shadow-lg p-3 mb-5 bg-body rounded" id="form">
+                            <form id="form" method="post" >
+                                <div>
+                                    <div class="fs-2 text-center fw-bold">Detalles de la entrega</div>
+                                </div>
+                                <div class="mb-2 text-center">
+                                    <label for="nombre">Nombre/s</label>
+                                    <input type="text" class="form-control text-center" id="nombre"  placeholder="Nombre/s" required>
+                                </div>
+                                <div class="mb-2 text-center">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" class="form-control text-center" id="apellido"  placeholder="Apellido" required>
+                                </div>
+                                <div class="mb-2 text-center">
+                                    <label for="dirección">Dirección</label>
+                                    <input type="text" class="form-control text-center" id="dirección"  placeholder="Dirección" required>
+                                </div>
+                                <div class="mb-2 text-center">
+                                    <label for="código postal">Código postal</label>
+                                    <input type="number" class="form-control text-center" id="código"  placeholder="Código postal" required>
+                                </div>
+                            <div class="mb-2 text-center"> 
+                                <label for="correo">Email</label>
+                                <input type="email" class="form-control text-center" id="correo" placeholder="Email" required>
+                            </div>
+                            <div class="mb-2 text-center">
+                                <label for="mensaje">Referencia</label>
+                                <textarea name="referencia" id="mensaje" class="form-control text-center" placeholder="Escriba aquí sus referencias del domicilio" required></textarea>
+                            </div>
+                            <input type='submit' class="btn btn-success" id='alta' value='GUARDAR' >
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container_tarjeta pt-3" >
+                        <form action="">
+                            <div class="inputBox">
+                                <span>Número de la tarjeta</span>
+                                <input type="text" maxlength="16" class="card-number-input" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Nombre y apellido</span>
+                                <input type="text" maxlength="16" class="card-holder-input" required>
+                            </div>
+                            <div class="flexbox">
+                                <div class="inputBox">
+                                    <span>Fecha de expiración mes MM</span>
+                                    <select name="" id="" class="mes-input">
+                                        <option value="mes" selected disabled>mes</option required>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">11</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <span>Fecha de expiración año AA</span>
+                                <select name="" id="" class="año-input">
+                                    <option value="año" selected disabled>año</option required>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                            <div class="inputBox">
+                                <span>cvv</span>
+                                <input type="text" maxlength="4" class="cvv-input" required>
+                            </div>
+                            <div class="row mx-4">
+                                <div class="=col d-flex justify-content-end py-3">
+                                    <button class="btn btn-success" id="btnComprar">COMPRAR</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+    
+    
+    
+    <footer class="bg-dark p-3 mt-2">
+        <p class="text-center m-0 text-muted py-3">Zona-Outlet : Todos los derechos reservados</p>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="proyecto.js"></script>
+    
+
+</body>
+
+</html>
+
